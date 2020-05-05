@@ -1,78 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8"/>
-	<title>Overwatch League</title>
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
+
+	<meta charset="utf-8"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+
+	<title>Overwatch League</title>
+	<link rel="icon" href="img/logo.png">
+
 </head>
 <body>
 <!-- SUP DA PÁGINA (NOME DO SITE/LINKS GERAIS)-->
-	<div class="header">
-		<div class="linha">
-			<header>
-			<div class="coluna col4">
-				<a href="index.html"><img src="img/logobig.png"></a>
-			</div>
-			<div class="coluna col8">
-				<nav>
-					<ul class="menu inline sem-marcador">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="equipes.html">Equipes</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="contato.html">Contato</a></li>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<img src="img/logo.png" class="logo">
+				</a>
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+					<i class="fas fa-bars"></i>
+	          	</button>
+
+				<div class="collapse navbar-collapse" id="nav-principal">
+            		<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="equipes.html">Equipes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="jogadores.html">Jogadores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sobre.html">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
 					</ul>
-				</nav>
+				</div>
+
 			</div>
-			</header>
-		</div>
-	</div>
+		</nav>
+	</header>
+
+
 	<div class="linha">
-		<section>
-			<h2><img src="img/logo.jpg"> Overwach League</h2>
-			<p>The Overwatch League (abbreviated as OWL) is a professional eSports league for the video game Overwatch, developed and fully controlled by Blizzard Entertainment. The Overwatch League aims to follow the model of traditional North American professional sports, using a set of permanent, city-based teams and regular season play, rather than the use of promotion and relegation used commonly in other eSports leagues. Each team franchise is backed by an owner and tied to a major city, and players that are signed onto the team are assured a minimum annual salary, benefits, and a portion of winnings and revenue-sharing based on how that team performs in the season.
-			The League was announced in November 2016, and the first twelve teams were established within the next year. The first season saw regular play from January to June 2018, and playoffs held that July, and an All-Star weekend to occur in August. A total prize pool of US$3.5 million was available to teams within the first season. Blizzard has since announced plans to add at least two expansion teams for the second season.</p>
-			<h3>Format</h3>
-			<p>The Overwatch League is owned by Blizzard Entertainment, and run under the Major League Gaming organization (which is also owned by Blizzard's parent company, Activision-Blizzard).[1] The Overwatch League plays out similar to most North American professional sports leagues, in which all teams play scheduled games against other teams to vie for position in the season's playoffs, rather than the approach of team promotion and relegation more commonly used in other eSports leagues.[2] The League currently features twelve teams.
-			In its inaugural season, a series of pre-season games were played in December 2017, regular season games planned from January to June 2018, and then a playoff for the championship scheduled for July 2018. All games in the first season took place at the Blizzard Arena in Los Angeles, with capacity for 450 spectators.
-			For the first season, the main season is made up of four 5-week long stages, with three matches played four days a week (Wednesday through Saturday) and a ten-day break between stages. Each team played 40 normal matches during the season; 20 against teams in their division, and 20 from outside their division. At the end of each stage is a playoff based on the teams' performances in that stage for a solitary winner of that stage for a prize of $125,000.Teams are also paid out based on their overall standings at the end of regular season play, ranging from US$25,000 to US$300,000 within the first season.
-			The post-season is based on teams' performance across all regular games across all stages of the season. The top team of each division get an automatic bye into the post-season, while the top four teams across both divisions have a play-off match before facing off in the semi-finals and finals. The winning team will receive $1 million, and with the total prize pool across all stages and finals totaling $3.5 million.</p>
-		<h3>Player eligibility and benefits</h3>
-		<p>While Overwatch is played in teams of six, League teams can have up to six additional players that can be swapped between matches.A team's membership is locked at the start of the season, but a mid-season signing period allows teams to bring in new players or trade players between teams.Following the finals, teams have about one month to extend current player contracts, bring on players from affiliated Overwatch Contenders teams, or privately held tryout sessions. Subsequently, all unsigned players by the end of this period enter free agency during which players can negotiate with teams to become part of the roster; in the case of when expansion teams are added, there is a month period where expansion teams have exclusive negotiating rights before other teams can engage. A team's minimum roster is to be set prior to the season's exhibition matches, about two months prior to season play, but they can expand and change this roster up until a specified date.Currently, the League is not region-locked, so teams can use players of any nationality to fill their ranks, as long as the team ownership is based in that city or region. For example, the London Spitfire at the onset of the first season was entirely made up of South Korean players. The only restriction on players is to be of at least 18 years old and ability to travel internationally.Overwatch League players, while on a team's contract, are paid an annual salary. In the first year, a player's salary was a minimum of US$50,000 set by the League. Additionally, the League offers players with health and retirement benefits, as well as housing and training support. Blizzard required team owners to provide the signed players with bonuses representing at least 50% of the team's winnings and revenue.Players can negotiate for larger amounts with their team's owners and larger portion of the bonus revenue-sharing from tournament winnings and other income. For example, Jay "sinatraa" Won secured the League's highest salary of US$150,000 for his spot on the San Francisco Shock, along with a 50% share of the team's bonuses.Players are expected to follow a code of conduct set by Blizzard while playing and representing the League, and may face suspension and fines for violating these, in addition to any penalties the team itself may impose.A noted incident shortly after the League's launch saw Dallas Fuel's Félix "xQc" Lengyel suspended by the League for four games and fined US$2,000 for making comments about another player that were deemed homophobic; the Dallas Fuel further suspended him for the remainder of the first Stage of play.Following additional conduct violations in the second stage that led to further suspension, xQc was let go by the Fuel.Players, as part of their benefits, receive media training to help with speaking to the press and public about their roles, an issue that has been a problem in previous organized eSport systems.</p>
+		<section class="branco">
+			<div class="container" id=sobre-fundo>
+				<div class="row">
+					<h2>Overwach League</h2>
+					<p>A Overwatch League (abreviada como OWL) é uma liga profissional de eSports para o videogame Overwatch, desenvolvida e totalmente controlada pela Blizzard Entertainment. A Liga Overwatch visa seguir o modelo de esportes profissionais tradicionais da América do Norte, usando um conjunto permanente de equipes da cidade e partidas regulares da temporada, em vez do uso de promoção e rebaixamento comumente usado em outras ligas de eSports. Cada franquia de equipe é apoiada por um proprietário e vinculada a uma grande cidade, e os jogadores contratados recebem um salário mínimo anual, benefícios e uma parte dos ganhos e participação nos lucros, com base no desempenho da equipe na temporada .
+					A Liga foi anunciada em novembro de 2016 e as primeiras doze equipes foram estabelecidas no próximo ano. A primeira temporada assistiu a partidas regulares de janeiro a junho de 2018, e os playoffs ocorreram em julho e um fim de semana do All-Star em agosto. Um total de prêmios de US $ 3,5 milhões estava disponível para as equipes na primeira temporada. Desde então, a Blizzard anunciou planos de adicionar pelo menos duas equipes de expansão para a segunda temporada.</p>
+					<h3>Formato</h3>
+					<p>A Overwatch League é de propriedade da Blizzard Entertainment e é administrada pela organização Major League Gaming (que também é de propriedade da empresa-mãe da Blizzard, a Activision-Blizzard). [1] A Liga Overwatch é semelhante à maioria das ligas esportivas profissionais da América do Norte, nas quais todas as equipes disputam jogos agendados contra outras equipes para disputar posição nos playoffs da temporada, em vez da abordagem de promoção e rebaixamento de equipes mais comumente usada em outras ligas de eSports. [2] Atualmente, a Liga possui doze times.
+					Em sua temporada inaugural, uma série de jogos de pré-temporada foi disputada em dezembro de 2017, jogos regulares da temporada planejados de janeiro a junho de 2018 e, em seguida, um playoff para o campeonato marcado para julho de 2018. Todos os jogos da primeira temporada ocorreram no Blizzard Arena em Los Angeles, com capacidade para 450 espectadores.
+					Para a primeira temporada, a temporada principal é composta por quatro etapas de cinco semanas, com três partidas disputadas quatro dias por semana (quarta a sábado) e um intervalo de dez dias entre as etapas. Cada equipe jogou 40 partidas normais durante a temporada; 20 contra equipes de sua divisão e 20 de fora de sua divisão. No final de cada etapa, há um playoff com base nas performances das equipes nessa etapa para um vencedor solitário dessa etapa, com um prêmio de $ 125.000. As equipes também são pagas com base em suas classificações gerais no final da temporada regular, variando de US $ 25.000 a US $ 300.000 na primeira temporada.
+					A pós-temporada é baseada no desempenho das equipes em todos os jogos regulares em todas as etapas da temporada. A equipe de topo de cada divisão se despede automaticamente da pós-temporada, enquanto as quatro melhores equipes de ambas as divisões têm uma partida de play-off antes de se enfrentarem nas meias-finais e nas finais. A equipe vencedora receberá US $ 1 milhão, e com o total de prêmios em todas as etapas e finais totalizando US $ 3,5 milhões.</p>
+					<h3>Qualificação e benefícios do jogador</h3>
+					<p>Enquanto Overwatch é jogado em equipes de seis, as equipes da Liga podem ter até seis jogadores adicionais que podem ser trocados entre as partidas. A associação da equipe é bloqueada no início da temporada, mas um período de assinatura no meio da temporada permite que as equipes tragam novos jogadores. Após as finais, as equipes têm cerca de um mês para estender os contratos atuais de jogadores, contratar jogadores de equipes afiliadas dos Contestadores de Overwatch ou sessões de teste particulares. Posteriormente, todos os jogadores não assinados até o final deste período entram em ação livre, durante o qual os jogadores podem negociar com as equipes para se tornar parte da lista; no caso de adição de equipes de expansão, há um período de um mês em que as equipes de expansão têm direitos de negociação exclusivos antes que outras equipes possam se envolver. A lista mínima de equipes é definida antes das partidas de exibição da temporada, cerca de dois meses antes da temporada, mas eles podem expandir e alterar essa lista até uma data especificada. Atualmente, a Liga não é bloqueada por região, para que as equipes possam use jogadores de qualquer nacionalidade para ocupar suas posições, desde que a propriedade da equipe seja baseada nessa cidade ou região. Por exemplo, o London Spitfire, no início da primeira temporada, era inteiramente formado por jogadores sul-coreanos. A única restrição aos jogadores é ter pelo menos 18 anos de idade e capacidade de viajar internacionalmente. Jogadores da Liga Overwatch, enquanto contratados por uma equipe, recebem um salário anual. No primeiro ano, o salário de um jogador era de no mínimo US $ 50.000, estabelecido pela Liga. Além disso, a Liga oferece aos jogadores benefícios de saúde e aposentadoria, bem como suporte de moradia e treinamento. A Blizzard exigiu que os proprietários da equipe concedessem aos jogadores assinados bônus que representassem pelo menos 50% dos ganhos e receitas da equipe. Os jogadores podem negociar quantias maiores com os proprietários de sua equipe e uma parcela maior da divisão de receita bônus dos ganhos em torneios e outras receitas. Por exemplo, Jay "sinatraa" Won garantiu o maior salário da Liga, de US $ 150.000, por sua vaga no San Francisco Shock, junto com uma participação de 50% nos bônus da equipe. Os jogadores devem seguir um código de conduta estabelecido pela Blizzard enquanto jogam e representando a Liga e pode enfrentar suspensão e multas por violá-las, além de quaisquer penalidades que a própria equipe possa impor. Um incidente notado logo após o lançamento da Liga viu o Félix "xQc" Lengyel do Dallas Fuel suspenso pela Liga por quatro jogos e multado em US $ 2.000 por fazer comentários sobre outro jogador que foi considerado homofóbico; o Dallas Fuel o suspendeu ainda mais pelo restante da primeira etapa do jogo. Após violações de conduta adicionais no segundo estágio que levaram a uma suspensão adicional, o xQc foi dispensado pelo Fuel.Players, como parte de seus benefícios, recebem treinamento da mídia para ajudar a falar com a imprensa e o público sobre suas funções, um problema que já havia sido um problema nos sistemas eSport organizados anteriormente.</p>
+				</div>
+			</div>
 		</section>
-		
 	</div>
  <!-- QUARTA LINHA (NOTÍCIAS RECENTES)-->
-		<div class="noticias">
-			<div class="linha">
-				<section>
-					<h2>NOTÍCIAS RECENTES</h2>
-					<div class="coluna col4">
-							<img src="img/fasegrupo320.jpg">
-							<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
-							<a href="fasegrupo.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/wreckingball.jpg">
-						<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas, tocando o terror em retaguardas inimigas e lançando campos minados onde dava na telha.</p>
-						<a href="wreckingball.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/cosplay.png">
-						<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
-						<a href="cosplay.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-				</section>
-			</div>
-		</div>
+		 <!-- QUARTA LINHA (NOTÍCIAS RECENTES)-->
+
+ 	<section id="noticias-home">
+ 		<div class="container">
+ 			<h2>NOTÍCIAS RECENTES</h2>
+ 			<div class="row">
+ 				<div class="col-md-4">
+ 					<img src="img/fasegrupo320.jpg">
+					<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/wreckingball.jpg">
+					<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas e tocando o terror em retaguardas inimigas, junto com suas minas.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/cosplay.png">
+					<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 			</div>
+ 		</div>
+
+ 	</section>
 <!-- Créditos da página-->
-  	<div>
+  		<div>
   		<div class="footer">
   			<div class="linha">
   				<footer>
   					<div class="coluna col12">
-  						<span>&copy; 2018 - Overwatch League</span>
+  						<span>Creating this site for studying purpuse</span>
   					</div>
   				</footer>
   			</div>

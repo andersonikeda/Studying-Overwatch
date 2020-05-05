@@ -1,153 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8"/>
-	<title>Overwatch League</title>
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
+	<meta charset="utf-8"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+
+	<title>Overwatch League</title>
+	<link rel="icon" href="img/logo.png">
 </head>
 <body>
+
 	<!-- SUP DA PÁGINA (NOME DO SITE/LINKS GERAIS)-->
-	<div class="header">
-		<div class="linha">
-			<header>
-			<div class="coluna col4">
-				<a href="index.html"><img src="img/logobig.png"></a>
-			</div>
-			<div class="coluna col8">
-				<nav>
-					<ul class="menu inline sem-marcador">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="equipes.html">Equipes</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="contato.html">Contato</a></li>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<img src="img/logo.png" class="logo">
+				</a>
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+					<i class="fas fa-bars"></i>
+	          	</button>
+
+				<div class="collapse navbar-collapse" id="nav-principal">
+            		<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="equipes.html">Equipes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="jogadores.html">Jogadores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sobre.html">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
 					</ul>
-				</nav>
+				</div>
+
 			</div>
-			</header>
-		</div>
-	</div>
+		</nav>
+	</header>
+
+
 <!-- Equipes -->
-		<div class="linha">
-			<section>
-				<div class="coluna col12 sidebar">
-				<h2>AS EQUIPES</h2>
-				</div>
-				<div class="coluna col3">
-					<img src="img/dallas.jpg"/>
-					<p><h3> <center> DALLAS FUEL </center></h3></p>
-					<P><h5><center>Boston,MA</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/spitfire.png"/>
-					<p><h3> <center> LONDON SPITFIRE </center></h3></p>
-					<P><h5><center>Londres, Inglaterra</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/gladiators.jpg"/>
-					<p><h3> <center> LOS ANGELES GLADIATORS </center></h3>
-					<P><h5><center>Los Angeles, CA</center></h5></P></p>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/excelsior.jpg"/>
-					<p><h3> <center> NEW YORK EXCELSIOR </center></h3></p>
-					<P><h5><center>Nova Iorque, EUA</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-			</section>
-		</div>
-		<div class="linha">
-			<section>
-				<div class="coluna col3">
-					<img src="img/outlaws.jpg"/>
-					<p><h3> <center> HOUSTON OUTLAWS </center></h3></p>
-					<P><h5><center>Houston, TX</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/mayhem.jpg"/>
-					<p><h3> <center> FLORIDA MAYHEM </center></h3></p>
-					<P><h5><center>Flórida</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
 
+	<section id="equipes">
+		<div class="container">
+			<h2 class="h2-equipes">INFORMAÇÕES DAS EQUIPES</h2>
+			<div class="row ">
+				<div class="col-md-4 div-equipes">
+					<img class="centro"  src="img/dallas.jpg"/>
+					<p><h3 class="h3-equipes">DALLAS FUEL</h3></p>
+					<p class="sub-titulo">Boston,MA</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
 				</div>
-				<div class="coluna col3">
-					<img src="img/uprising.jpg"/>
-					<p><h3> <center> BOSTON UPRISING </center></h3>
-					<P><h5><center>Boston, MA</center></h5></P></p>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/spitfire.png"/>
+					<p><h3 class="h3-equipes">LONDON SPITFIRE</h3></p>
+					<p class="sub-titulo">Londres, Inglaterra</center></h5></P>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+					
 				</div>
-				<div class="coluna col3">
-					<img src="img/dragons.png"/>
-					<p><h3> <center> SHANGHAI DRAGONS </center></h3></p>
-					<P><h5><center>Shanghái</center></h5></P>
-					<p><h4><center><a href="" >Ver jogadores &raquo;</a></center></h4></p>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/gladiators.jpg"/>
+					<p><h3 class="h3-equipes">LOS ANGELES GLADIATORS</h3>
+					<p class="sub-titulo">Los Angeles, CA</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a> </p>
+					
 				</div>
-			</section>
-		</div>
-		<div class="linha">
-			<section>
-				<div class="coluna col3">
-					<img src="img/shock.jpg"/>
-					<p><h3> <center> SAN FRANCISCO SHOCK </center></h3></p>
-					<P><h5><center>São Francisco, EUA</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/fusion.jpg"/>
-					<p><h3> <center> PHILADELPHIA FUSION </center></h3></p>
-					<P><h5><center>Filadélfia, EUA</center></h5></P>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-
-				</div>
-				<div class="coluna col3">
-					<img src="img/dynasty.jpg"/>
-					<p><h3> <center> SEOUL DYSNASTY </center></h3>
-					<P><h5><center>Seul, Coreia</center></h5></P></p>
-					<p><h4><center><a href="">Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-				<div class="coluna col3">
-					<img src="img/valiant.png"/>
-					<p><h3> <center> LOS ANGELES VALIANT </center></h3></p>
-					<P><h5><center>Los Angeles, CA</center></h5></P>
-					<p><h4><center><a href="" >Ver jogadores &raquo;</a></center></h4></p>
-				</div>
-			</section>
-		</div>
-		<!--(NOTÍCIAS RECENTES)-->
-		<div class="noticias">
-			<div class="linha">
-				<section>
-					<h2>NOTÍCIAS RECENTES</h2>
-					<div class="coluna col4">
-							<img src="img/fasegrupo320.jpg">
-							<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
-							<a href="fasegrupo.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/wreckingball.jpg">
-						<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas, tocando o terror em retaguardas inimigas e lançando campos minados onde dava na telha.</p>
-						<a href="wreckingball.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/cosplay.png">
-						<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
-						<a href="cosplay.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-				</section>
 			</div>
+
+			<div class="row">
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/excelsior.jpg"/>
+					<p><h3 class="h3-equipes"> NEW YORK EXCELSIOR </h3></p>
+					<p class="sub-titulo">Nova Iorque, EUA</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/outlaws.jpg"/>
+					<p><h3 class="h3-equipes"> HOUSTON OUTLAWS </h3> </p>
+					<p class="sub-titulo">Houston, TX</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/mayhem.jpg"/>
+					<p><h3 class="h3-equipes"> FLORIDA MAYHEM </h3></p>
+					<p class="sub-titulo">Flórida</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/uprising.jpg"/>
+					<p><h3 class="h3-equipes"> BOSTON UPRISING </h3>
+					<p class="sub-titulo">Boston, MA</p>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/dragons.png"/>
+					<p><h3 class="h3-equipes"> SHANGHAI DRAGONS </h3></p>
+					<p class="sub-titulo">Shanghái</center></h5></P>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+					
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/shock.jpg"/>
+					<p><h3 class="h3-equipes">SAN FRANCISCO SHOCK </center></h3></p>
+					<p class="sub-titulo">São Francisco, EUA</center></P>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+					
+				</div>
+			</div>
+
+			<div class="row div-equipes">
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/fusion.jpg"/>
+					<p><h3 class="h3-equipes"> PHILADELPHIA FUSION</h3></p>
+					<p class="sub-titulo">Filadélfia, EUA</P>
+					<p><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/dynasty.jpg"/>
+					<p><h3 class="h3-equipes">SEOUL DYSNASTY </h3>
+					<p class="sub-titulo">Seul, Coreia</p>
+					<p ><a href="" class="link-equipes">Ver jogadores &raquo;</a></p>
+					
+				</div>
+				<div class="col-md-4 div-equipes">
+					<img class="centro" src="img/valiant.png"/>
+					<p><h3 class="h3-equipes">LOS ANGELES VALIANT </center></h3></p>
+					<p class="sub-titulo">Los Angeles, CA</P>
+					<p><a href="" class="link-equipes" >Ver jogadores &raquo;</a></center></h4></p>
+				</div>
+			</div>
+
 		</div>
+	</section>
+
+		
+				
+				
+		<!--(NOTÍCIAS RECENTES)-->
+	<section id="noticias-home">
+ 		<div class="container">
+ 			<h2>NOTÍCIAS RECENTES</h2>
+ 			<div class="row">
+ 				<div class="col-md-4">
+ 					<img src="img/fasegrupo320.jpg">
+					<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/wreckingball.jpg">
+					<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas e tocando o terror em retaguardas inimigas, junto com suas minas.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/cosplay.png">
+					<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+
 		<!-- Créditos da página-->
   	<div>
   		<div class="footer">
   			<div class="linha">
   				<footer>
   					<div class="coluna col12">
-  						<span>&copy; 2018 - Overwatch League</span>
+  						<span>Criando o site apenas para propósitos educacionais - Creating this site for studying purpuse only</span>
   					</div>
   				</footer>
   			</div>

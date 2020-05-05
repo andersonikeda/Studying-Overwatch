@@ -1,110 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8"/>
-	<title>Overwatch League</title>
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
+
+	<meta charset="utf-8"/>
+
 	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+
+	<title>Overwatch League</title>
+	<link rel="icon" href="img/logo.png">
+
 </head>
 <body>
 <!-- SUP DA PÁGINA (NOME DO SITE/LINKS GERAIS)-->
-	<div class="header">
-		<div class="linha">
-			<header>
-			<div class="coluna col4">
-				<a href="index.html"><img src="img/logobig.png"></a>
-			</div>
-			<div class="coluna col8">
-				<nav>
-					<ul class="menu inline sem-marcador">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="equipes.html">Equipes</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="contato.html">Contato</a></li>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<img src="img/logo.png" class="logo">
+				</a>
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+					<i class="fas fa-bars"></i>
+	          	</button>
+
+				<div class="collapse navbar-collapse" id="nav-principal">
+            		<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="equipes.html">Equipes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="jogadores.html">Jogadores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sobre.html">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
 					</ul>
-				</nav>
+				</div>
+
 			</div>
-			</header>
-		</div>
-	</div>
-<!-- SEGUNDA LINHA DA PÁGINA (HORÁRIO DAS PARTIDAS/NOTÍCIA EM DESTAQUE)-->
-	<div class="fundo">
-		<div class="linha">
-			<section>
-				<div class="coluna col3 sidebar">
-					<h3>Próximas Partidas</h3>
-					<ul class="sem-marcador sem-padding">
-						<li><a href="">12PM B.Uprising vs NY Excelsior</a></li>
-						<li><a href="">14PM F.Mayhem vs H.Outlaws</a></li>
-						<li><a href="">16PM L.Spitfire vs LA Gladiators</a></li>
-						<li><a href="">20PM LA Valiante vs D.Fuel</a></li>
-						<li><a href="">22PM S.Dragons vs S.Dynasty</a></li>
-					</ul>
-					<a href="cronograma.html" class="botao">Ver todas &raquo;</a>
-				</div>
-				<div class="coluna col9">
-					<h2>Prévia da fase de grupos: <em>Los Angeles</em></h2>
-					<img src="img/fasegrupo.jpg"/>
-					<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch. Agora, depois de um Fim de Semana das Estrelas muito louco, aterrissamos na Blizzard Arena Los Angeles para a segunda fase de grupos.</p>
-					<a href="fasegrupo.html" class="botao">Continue lendo &raquo;</a>
-				</div>
-			</section>
-		</div>
+		</nav>
+	</header>
 		
-<!-- TERCEIRA LINHA (PARA QUEM TORCER/IMAGEM DOS TIMES)-->
-		<div class="conteudo-extra">
-			<div class="linha">
-				<div class="coluna col5">
-					<section>
-						<h2>PARA QUEM VOCÊ VAI TORCER?</h2>
-						<P>As equipes da Liga Overwatch são franquias permanentes que representam algumas das maiores cidades do mundo.</P>
-						<a href="equipes.html" class="botao">Ver times &raquo;</a>
-					</section>
-				</div>
-				<div class="coluna col7">
-					<img src="img/logos.png">
+<!-- SEGUNDA LINHA DA PÁGINA (Background Estádio)-->
+	 
+
+	<section id="home" class="d-flex">
+		<div class="container align-self-center">
+			<div class="row">
+				<div class="col-md-12" style=" color: white">
+					<h1 align="center">
+						<a href="#" >UM DIA NA COPA DA CALIFÓRNIA: OAKLAND</a>
+					</h1>
+					<br/>
+					<h4>Vencer na Copa da Califórnia: alcançado. Conhecer os fãs locais pela primeira vez: alcançado. Um ótimo fim de semana para o San Francisco Shock.</h4>
 				</div>
 			</div>
 		</div>
-		<div class="linha">
-			<div class="coluna col12"></div>
+	</section>
+
+<!--  Terceira Linha (Lista de Times)  -->
+	<section id="times">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" >
+					<h2 class="branco">PARA QUEM VOCÊ VAI TORCER?</h2>
+					<p class="branco">As equipes da Liga Overwatch são franquias permanentes que representam algumas das maiores cidades do mundo.</p>
+					<a href="equipes.html" class="botao">Ver times &raquo;</a>
+
+						<br/>
+						<br/>
+
+					<h3 class="branco">CONHEÇA A PRÓXIMA GERAÇÃO DE SUPERSTARS ESPORTS</h3>
+					<p class="branco">Selecionados cuidadosamente durante a pré-temporada da Liga Overwatch, nossos jogadores ganham salários garantidos e competem por milhões de dólares em bônus de equipe nos maiores palcos da história do esports.</p>
+					<a href="jogadores.html" class="botao">Ver Jogadores &raquo;</a>
+
+						<br/>
+						<br/>
+
+					<h3 class="branco">COMO FUNCIONA?</h3>
+					<p class="branco">As equipes internacionais da cidade recrutam os melhores jogadores de Overwatch para competir em uma temporada de cinco meses, seguidos de playoffs de campeonato com um bônus de US $ 1 milhão pelo primeiro lugar.</p>
+					<a href="sobre.html" class="botao">Saiba mais &raquo;</a>
+
+
+				</div>
+				<div class="col-md-6 align-self-center">
+					<img class="img-fluid times-home"  src="img/logos.png">
+				</div>
+			</div>
 		</div>
-  	</div>
+	</section>
+
+
  <!-- QUARTA LINHA (NOTÍCIAS RECENTES)-->
-		<div class="noticias">
-			<div class="linha">
-				<section>
-					<h2>NOTÍCIAS RECENTES</h2>
-					<div class="coluna col4">
-							<img src="img/fasegrupo320.jpg">
-							<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
-							<a href="fasegrupo.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/wreckingball.jpg">
-						<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas, tocando o terror em retaguardas inimigas e lançando campos minados onde dava na telha.</p>
-						<a href="wreckingball.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-					<div class="coluna col4">
-						<img src="img/cosplay.png">
-						<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
-						<a href="cosplay.html" class="botao">Continue lendo &raquo;</a>
-					</div>
-				</section>
-			</div>
-		</div>
+
+ 	<section id="noticias-home">
+ 		<div class="container">
+ 			<h2>NOTÍCIAS RECENTES</h2>
+ 			<div class="row">
+ 				<div class="col-md-4">
+ 					<img src="img/fasegrupo320.jpg">
+					<p>No mês passado viajamos para Incheon, onde a equipe da casa, a Coreia do Sul, e a Finlândia se tornaram as duas primeiras representantes das 8 melhores da Copa Mundial de Overwatch.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/wreckingball.jpg">
+					<p>Já faz um mês que Wrecking Ball chegou ao servidor público se balançando alegremente pelos mapas e tocando o terror em retaguardas inimigas, junto com suas minas.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 				<div class="col-md-4">
+ 					<img src="img/cosplay.png">
+					<p>O pôr do sol coloria lentamente o céu de Seul, como se fosse uma aquarela. Um laranja forte riscava o horizonte enquanto aviões planavam enfileirados, aguardando o pouso.</p>
+					<a href="#" class="botao">Continue lendo &raquo;</a>
+ 				</div>
+
+ 			</div>
+ 		</div>
+
+ 	</section>
+		
 <!-- Créditos da página-->
   	<div>
   		<div class="footer">
   			<div class="linha">
   				<footer>
   					<div class="coluna col12">
-  						<span>&copy; 2018 - Overwatch League</span>
+  						<span>Creating this site for studying purpuse</span>
   					</div>
   				</footer>
   			</div>
   		</div>
   	</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
